@@ -1,0 +1,45 @@
+*{
+     margin: 0;
+     padding: 0;
+
+}
+
+body{
+     background-color: black;
+     color: aliceblue;
+}
+
+.navbar ul {
+     list-style: none;
+     background: rgb(124, 255, 124);
+     text-align: center;
+}
+
+ul li {
+     display: inline-block;
+     position: relative;
+}
+
+ul li a {
+     display: block;
+     text-decoration: none;
+     text-align: center;
+     padding: 20px 25px;
+     font-size: 30px;
+     font-weight: bolder;
+}
+
+ul li .dropDown {
+     width: auto;
+     position: absolute;
+     display: none;
+}
+
+ul li a:hover {
+     background-color: #ffff;
+}
+
+ul li:hover ul.dropDown {
+     display: flex;
+     flex-direction: column;
+}

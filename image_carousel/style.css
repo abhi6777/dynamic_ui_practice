@@ -1,0 +1,22 @@
+img {
+     height: 600px;
+     width: 900px;
+}
+
+.container {
+     position: relative;
+     border: 6px solid black;
+     /* centering the div */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.container div {
+     position: absolute;
+}
+
+h1{
+     position: fixed;
+     z-index: 1;
+}
