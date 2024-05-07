@@ -3,26 +3,38 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Image carousel</title>
-
+     <title>Image Carousel</title>
      <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <h1>Hello Abhimanyu</h1>
-     <div class="main">
-          <div class="container">
-
-               <div class="image"><img src="images/DSC_0103.JPG" alt="Img1"></div>
-
-               <div class="image"><img src="images/DSC_0225.JPG" alt="Img2"></div>
-
-               <div class="image"><img src="images/DSC_0270.JPG" alt="Img3"></div>
-
-               <div class="image"><img src="images/DSC_0320.JPG" alt="Img4"></div>
-
-               <div class="image"><img src="images/DSC_5188.JPG" alt="Img1"></div>
-
+     <div class="carousel">
+          <div class="slides">
+               <div class="slide">
+                    <img src="images/DSC_0103.JPG" alt="Slide 1">
+               </div>
+               <div class="slide">
+                    <img src="images/DSC_0225.JPG" alt="Slide 2">
+               </div>
+               <div class="slide">
+                    <img src="images/DSC_0270.JPG" alt="Slide 3">
+               </div>
+               <div class="slide">
+                    <img src="images/DSC_0320.JPG" alt="Slide 4">
+               </div>
+               <div class="slide">
+                    <img src="images/DSC_5188.JPG" alt="Slide 5">
+               </div>
+          </div>
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+          <div class="dots">
+               <span class="dot"></span>
+               <span class="dot"></span>
+               <span class="dot"></span>
+               <span class="dot"></span>
+               <span class="dot"></span>
           </div>
      </div>
+     <script src="script.js"></script>
 </body>
 </html>

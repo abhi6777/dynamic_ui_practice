@@ -1,22 +1,57 @@
-img {
-     height: 600px;
-     width: 900px;
-}
-
-.container {
+.carousel {
      position: relative;
-     border: 6px solid black;
-     /* centering the div */
+     width: 100%;
+     max-width: 900px;
+     margin: 50px auto;
+     overflow: hidden;
+}
+
+.slides {
      display: flex;
-     align-items: center;
-     justify-content: center;
 }
 
-.container div {
+.slide {
+     flex: 0 0 100%;
+     display: none;
+}
+
+.slide img {
+     width: 100%;
+}
+
+button {
      position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     background: none;
+     border: none;
+     font-size: 2em;
+     cursor: pointer;
 }
 
-h1{
-     position: fixed;
-     z-index: 1;
+.prev {
+     left: 0;
+}
+
+.next {
+     right: 0;
+}
+
+.dots {
+     text-align: center;
+     margin-top: 20px;
+}
+
+.dot {
+     height: 15px;
+     width: 15px;
+     background-color: #bbb;
+     border-radius: 50%;
+     display: inline-block;
+     margin: 0 5px;
+     cursor: pointer;
+}
+
+.active {
+     background-color: #717171;
 }
